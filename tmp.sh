@@ -1,0 +1,1 @@
+git log --pretty=format:"%h %at" --author=alexeyqu  --numstat | gawk '{gsub(/(-|\w|\/)+(-|\.|\w)+\./,"")}1'
